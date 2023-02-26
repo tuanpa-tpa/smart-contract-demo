@@ -42,7 +42,7 @@ contract Vault is Ownable, AccessControlEnumerable {
         SafeERC20.safeTransferFrom(token, msg.sender, address(this), _amount);
     }
     modifier onlyWithdrawer() {
-        require(owner() == _msgSender()||hasRole(WITHDRAWER_ROLE,_msgSender()), "Caller is not a withdrawer");
+        require(owner() == _msgSender() || hasRole(WITHDRAWER_ROLE,_msgSender()), "Caller is not a withdrawer");
         _;
     }
 }
