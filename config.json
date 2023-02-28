@@ -1,8 +1,10 @@
 {
   "dev": {},
   "bsctest": {
-    "Floppy": "0x84204dEE35076aeE00F17BaC7aab71f1f64A0e55",
-    "Vault": "0xfbb0d4087d8a331aC27E1C7A0342E1794473e2bb"
+    "Floppy": "0xD503e6dE924B2F52ABB82bF0DD8EcDCB029d67F6",
+    "Vault": "0x3f4ED751145B046b09f13717D50Ea5c5440bD311",
+    "USDT": "0x477c0AeD27Adcb98c8ec7867cE1Cb96dc886b172",
+    "ico": "0xF3dE390cf3A4DF7E304Af12Eec93e2fA5cC324c0"
   },
   "main": {}
 }

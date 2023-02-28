@@ -7,23 +7,23 @@ async function main() {
     const [deployer] = await ethers.getSigners();
     console.log('deploy from address: ', deployer.address);
 
-    const Floppy = await ethers.getContractFactory("Floppy");
-    const floppy = await Floppy.deploy();
-    console.log('Floppy address: ', floppy.address);
-    Config.setConfig(network + '.Floppy', floppy.address);
-
-    const Vault = await ethers.getContractFactory("Vault");
-    const vault = await Vault.deploy();
-    console.log('Floppy address: ', vault.address);
-    Config.setConfig(network + '.Vault', vault.address);
-    
-    // const Floppy = await ethers.getContractFactory("USDT");
+    // const Floppy = await ethers.getContractFactory("Floppy");
     // const floppy = await Floppy.deploy();
-    // console.log('USDT address: ', floppy.address);
-    // Config.setConfig(network + '.USDT', floppy.address);
+    // console.log('Floppy address: ', floppy.address);
+    // Config.setConfig(network + '.Floppy', floppy.address);
+
+    // const Vault = await ethers.getContractFactory("Vault");
+    // const vault = await Vault.deploy();
+    // console.log('Floppy address: ', vault.address);
+    // Config.setConfig(network + '.Vault', vault.address);
+    
+    // const USDT = await ethers.getContractFactory("USDT");
+    // const usdt = await USDT.deploy();
+    // console.log('USDT address: ', usdt.address);
+    // Config.setConfig(network + '.USDT', usdt.address);
 
     // const Ico = await ethers.getContractFactory("FLPCrowdSale");
-    // const ico = await Ico.deploy(1000,100,'0xdF8De3b50Be87dE8676c4731187c5DC5C00E70F3', '0xd54D6d5BD983a6cA18F8820f80E0A970FE4A9a8c');
+    // const ico = await Ico.deploy(1000,100,'0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC', '0xD503e6dE924B2F52ABB82bF0DD8EcDCB029d67F6');
     // console.log('ICO address: ', ico.address);
     // Config.setConfig(network + '.ico', ico.address);
 
