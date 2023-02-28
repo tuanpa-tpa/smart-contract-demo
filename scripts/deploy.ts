@@ -34,9 +34,9 @@ async function main() {
     // Config.setConfig(network + '.Hero', hero.address);
 
 
-    // const MKP = await ethers.getContractFactory("HeroMarketplace");
-    // const heroMarketplace = await MKP.deploy("0x65f00a282A58B30f8376D41832d76CeCB7b6186C", "0xd54D6d5BD983a6cA18F8820f80E0A970FE4A9a8c");
-    // console.log('Market deployed at: ', heroMarketplace.address);
+    const MKP = await ethers.getContractFactory("HeroMarketplace");
+    const heroMarketplace = await MKP.deploy("0xD503e6dE924B2F52ABB82bF0DD8EcDCB029d67F6", "0x4485c1Be2996a0af9d03d42ad0971C0915341D42");
+    console.log('Market deployed at: ', heroMarketplace.address);
     
     // const Auction = await ethers.getContractFactory("Auction");
     // const auction = await Auction.deploy("0xd54D6d5BD983a6cA18F8820f80E0A970FE4A9a8c", "0x65f00a282A58B30f8376D41832d76CeCB7b6186C");
